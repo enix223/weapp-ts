@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<van-button type="primary" block="{{ true }}" size="large">按钮</van-button>

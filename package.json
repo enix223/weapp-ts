@@ -1,0 +1,18 @@
+{
+  "name": "miniprogram-ts-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+  },
+  "entry": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vant/weapp": "^1.0.0",
+    "miniprogram-api-typings": "^2.9.3",
+    "typescript": "^3.7.3"
+  }
+}
