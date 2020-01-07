@@ -1,10 +1,12 @@
 {
   "name": "miniprogram-ts-quickstart",
   "version": "1.0.0",
-  "description": "",
+  "description": "miniprogram typescript scaffold",
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
-    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+    "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "entry": "app.js",
   "keywords": [],
@@ -12,7 +14,15 @@
   "license": "",
   "dependencies": {
     "@vant/weapp": "^1.0.0",
-    "miniprogram-api-typings": "^2.9.3",
-    "typescript": "^3.7.3"
+    "miniprogram-api-typings": "^2.9.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
   }
 }
